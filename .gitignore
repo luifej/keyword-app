@@ -10,7 +10,7 @@ __pycache__/
 
 # Env (mantén .env.example)
 .env
-.env.*
+!.env.example
 
 # Build/Cache/IDE
 dist/
