@@ -1,0 +1,23 @@
+# Node (web)
+apps/web/node_modules/
+apps/web/.next/
+
+# Python (api)
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Env (mantén .env.example)
+.env
+.env.*
+
+# Build/Cache/IDE
+dist/
+build/
+coverage/
+playwright/.cache/
+.DS_Store
+*.log
+.idea/
+.vscode/
