@@ -6,7 +6,7 @@ services:
     ports: ["8000:8000"]
   worker:
     build: {context: ../, dockerfile: infra/Dockerfile.api}
-    command: celery -A app.worker.celery_app worker -Q keywords -l INFO
+    command: celery -A worker.celery_app worker -Q keywords -l INFO
     env_file: ../.env
     depends_on: [api, redis, db]
   web:

@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from app.worker.tasks import discover_ideas
+from worker.tasks import discover_ideas
 
 router = APIRouter()
 
